@@ -118,7 +118,7 @@ end
 
 local _96soul = Instance.new("ScreenGui")
 _96soul.Name = "_96soul"
-_96soul.Parent = not game:GetService("RunService"):IsStudio() and game:GetService("CoreGui") or game:GetService("Players").LocalPlayer.PlayerGui
+_96soul.Parent = gethui()
 _96soul.ZIndexBehavior = Enum.ZIndexBehavior.Global
 _96soul.IgnoreGuiInset = true
 
@@ -1886,5 +1886,6 @@ function Library:New(meta)
 	return Library.Tab
 end
 return Library
+
 
 
