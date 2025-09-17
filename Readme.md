@@ -23,7 +23,7 @@ local left =  Tab:Section({
 })
 ```
 Create Button
-```
+```lua
 left:Button({
 	title = "Button",
 	callback = function()
