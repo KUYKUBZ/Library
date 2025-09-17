@@ -180,7 +180,7 @@ function Library:New(meta)
 	ImageLabel.Position = UDim2.new(0.5, 0,0.5, 0)
 	ImageLabel.Size = UDim2.new(0, 45,0, 45)
 	ImageLabel.Image = GetIcon(Logo)
-	ImageLabel.ImageTransparency = 1
+	ImageLabel.ImageTransparency = 0
 
 	local function closeopenui()
 		task.spawn(function()
@@ -1886,6 +1886,7 @@ function Library:New(meta)
 	return Library.Tab
 end
 return Library
+
 
 
 
