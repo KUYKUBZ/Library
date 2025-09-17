@@ -2,7 +2,7 @@
 
 Load
 ```lua
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/KUYKUBZ/Library/refs/heads/main/dearquiz.lua"))();
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/KUYKUBZ/Library/refs/heads/main/src.lua"))();
 ```
 Create Windows
 ```lua
