@@ -1,4 +1,4 @@
 # Library
-'''lua
+```lua
 local dear = loadstring
-,,,
+```
