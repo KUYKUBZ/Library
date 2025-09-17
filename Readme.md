@@ -1,5 +1,5 @@
-# Library
-#This UI Made by 96soul
+# Library This UI Made by 96soul
+
 Load
 ```lua
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/KUYKUBZ/Library/refs/heads/main/dearquiz.lua"))();
@@ -59,7 +59,7 @@ left:Dropdown({
 ```
 Create Textbox
 ```lua
-right:Textbox({
+left:Textbox({
 	Value = "Textbox",
 	PlaceHolder = "Paste",
 	ClearOnFocus = false,
