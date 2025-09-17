@@ -1,4 +1,5 @@
 # Library
+#This UI Made by 96soul
 Load
 ```lua
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/KUYKUBZ/Library/refs/heads/main/dearquiz.lua"))();
@@ -18,24 +19,24 @@ Create Section
 ``` lua
 local left =  Tab:Section({
 	title = "Section",
-	side = "l"
+	side = "l" -- or 2
 })
 ```
-
-local right =  Tab2:Section({
-	title = "Section",
-	side = "r"
-})
-
+Create Button
+```
 left:Button({
 	title = "Button",
 	callback = function()
 		print("Click")
 	end
 })
-
+```
+Create Line
+```lua
 left:Line()
-
+```
+Create Toggle
+```lua
 left:Toggle({
 	title = "Automatic",
 	value = true,
@@ -43,15 +44,9 @@ left:Toggle({
 		print(v)
 	end
 })
-
-left:Toggle({
-	title = "Automatic",
-	value = false,
-	callback = function(v)
-		print(v)
-	end
-})
-
+```
+Create Dropdown
+```lua
 left:Dropdown({
 	Title = "Dropdown",
 	Multi = false,
@@ -61,20 +56,9 @@ left:Dropdown({
 		print(v)
 	end
 })
-
-left:Dropdown({
-	Title = "Dropdown Multi",
-	Multi = true,
-	List = {"Hello", "EZ"},
-	Value = {"Hello"},
-	Callback = function(v)
-		print(v)
-		--Dropdown:AddList("Hello") -- เพิ่มรายชื่อ
-		--Dropdown:Clear("Hello") -- ลบรายชื่อแบบเลือก
-		--Dropdown:Clear() -- ลบรายชื่อทั้งหมด
-	end
-})
-
+```
+Create Textbox
+```lua
 right:Textbox({
 	Value = "Textbox",
 	PlaceHolder = "Paste",
@@ -83,10 +67,10 @@ right:Textbox({
 		print(v)
 	end
 })
-
-right:Line()
-
-right:Slider({
+```
+Create Slider
+```lua
+left:Slider({
 	Title = "Slider",
 	Value = 50,
 	Min = 10,
@@ -96,13 +80,9 @@ right:Slider({
 		print(v)
 	end
 })
-
-right:Line()
-
-left:Line()
-
+```
+Create Label
+```lua
 left:Label('This UI Made by <font color="rgb(0, 255, 127)">96soul</font>')
-
-
-left:Line()
+```
 
