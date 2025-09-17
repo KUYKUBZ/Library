@@ -2,7 +2,7 @@
 
 Load
 ```lua
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/KUYKUBZ/Library/refs/heads/main/src.lua"))();
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/KUYKUBZ/Library/refs/heads/main/Lib.lua"))();
 ```
 Create Windows
 ```lua
