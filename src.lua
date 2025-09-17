@@ -169,7 +169,7 @@ function Library:New(meta)
 	Icon_1.BorderColor3 = Color3.fromRGB(0,0,0)
 	Icon_1.BorderSizePixel = 0
 	Icon_1.Size = UDim2.new(0, 50,0, 50)
-	Icon_1.BackgroundTransparency = 1
+	Icon_1.BackgroundTransparency = 0
 
 	ImageLabel.Parent = Icon_1
 	ImageLabel.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -1886,6 +1886,7 @@ function Library:New(meta)
 	return Library.Tab
 end
 return Library
+
 
 
 
