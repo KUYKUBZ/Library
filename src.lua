@@ -118,7 +118,7 @@ end
 
 local _96soul = Instance.new("ScreenGui")
 _96soul.Name = "_96soul"
-_96soul.Parent = gethui()
+_96soul.Parent = not game:GetService("RunService"):IsStudio() and game:GetService("CoreGui") or game:GetService("Players").LocalPlayer.PlayerGui
 _96soul.ZIndexBehavior = Enum.ZIndexBehavior.Global
 _96soul.IgnoreGuiInset = true
 
@@ -169,18 +169,18 @@ function Library:New(meta)
 	Icon_1.BorderColor3 = Color3.fromRGB(0,0,0)
 	Icon_1.BorderSizePixel = 0
 	Icon_1.Size = UDim2.new(0, 50,0, 50)
-	Icon_1.BackgroundTransparency = 0
+	Icon_1.BackgroundTransparency = 1
 
 	ImageLabel.Parent = Icon_1
 	ImageLabel.AnchorPoint = Vector2.new(0.5, 0.5)
 	ImageLabel.BackgroundColor3 = Color3.fromRGB(255,255,255)
-	ImageLabel.BackgroundTransparency = 0
+	ImageLabel.BackgroundTransparency = 1
 	ImageLabel.BorderColor3 = Color3.fromRGB(0,0,0)
 	ImageLabel.BorderSizePixel = 0
 	ImageLabel.Position = UDim2.new(0.5, 0,0.5, 0)
 	ImageLabel.Size = UDim2.new(0, 45,0, 45)
 	ImageLabel.Image = GetIcon(Logo)
-	ImageLabel.ImageTransparency = 1
+	ImageLabel.ImageTransparency = 0
 
 	local function closeopenui()
 		task.spawn(function()
@@ -1886,11 +1886,4 @@ function Library:New(meta)
 	return Library.Tab
 end
 return Library
-
-
-
-
-
-
-
 
