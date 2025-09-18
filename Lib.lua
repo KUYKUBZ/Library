@@ -139,7 +139,7 @@ function Library:New(meta)
 	Background_1.Position = UDim2.new(0.5, 0,0.5, 0)
 	Background_1.Size = UDim2.new(0, 0,0, 5)
 	lak(Background_1)
-	tw({v = Background_1,t = 1,s = "Bounce",d = "Out",g = {Size = UDim2.new(0, 500,0, 375)}}):Play()
+	tw({v = Background_1,t = 1,s = "Bounce",d = "Out",g = {Size = UDim2.new(0, 500,0, 300)}}):Play()
 
 	local CloseUI = Instance.new("TextButton")
 	local UICorner_1z = Instance.new("UICorner")
@@ -1886,4 +1886,5 @@ function Library:New(meta)
 	return Library.Tab
 end
 return Library
+
 
