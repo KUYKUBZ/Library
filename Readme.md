@@ -19,7 +19,7 @@ Create Section
 ``` lua
 local left =  Tab:Section({
 	title = "Section",
-	side = "l" -- or 2
+	side = "l" -- or r
 })
 ```
 Create Button
