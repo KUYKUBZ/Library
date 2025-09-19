@@ -365,7 +365,7 @@ function Library:New(meta)
 		Title_1.TextTransparency = 0.5
 		
 		UIGradient_1.Parent = AddTab_1
-		UIGradient_1.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255,0,0)),ColorSequenceKeypoint.new(0.5, Color3.fromRGB(255,140,0)),ColorSequenceKeypoint.new(1, Color3.fromRGB(255,255,0))}
+		UIGradient_1.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255,0,0)),ColorSequenceKeypoint.new(0.5, Color3.fromRGB(255,140,0)),ColorSequenceKeypoint.new(1, Color3.fromRGB(255,140,0))}
 		
 		local Pages_1 = Instance.new("Frame")
 		local Left_1 = Instance.new("ScrollingFrame")
@@ -1886,6 +1886,7 @@ function Library:New(meta)
 	return Library.Tab
 end
 return Library
+
 
 
 
