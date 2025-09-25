@@ -10,7 +10,10 @@ local Window = Library:New({
 	logo = 137425711541503,
 	bind = Enum.KeyCode.Q
 })
--- _G.TabColor = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255,0,0)),ColorSequenceKeypoint.new(0.5, Color3.fromRGB(255,140,0)),ColorSequenceKeypoint.new(1, Color3.fromRGB(255,140,0))}
+--[[
+_G.TabColor = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255,0,0)),ColorSequenceKeypoint.new(0.5, Color3.fromRGB(255,140,0)),ColorSequenceKeypoint.new(1,Color3.fromRGB(255,140,0))}
+_G.Theme = Color3.fromRGB(0,255,127)
+]]--
 ```
 Create tab
 ```lua
