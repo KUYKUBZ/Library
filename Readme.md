@@ -11,8 +11,12 @@ local Window = Library:New({
 	bind = Enum.KeyCode.Q
 })
 --[[
-_G.TabColor = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255,0,0)),ColorSequenceKeypoint.new(0.5, Color3.fromRGB(255,140,0)),ColorSequenceKeypoint.new(1,Color3.fromRGB(255,140,0))}
-_G.Theme = Color3.fromRGB(0,255,127)
+_G.Theme {
+    Button = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255,0,0)),ColorSequenceKeypoint.new(0.5, Color3.fromRGB(255,140,0)),ColorSequenceKeypoint.new(1,Color3.fromRGB(255,140,0))},
+    Toggle = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 42, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(129, 0, 0))},
+    Dropdown = Color3.fromRGB(255, 98, 0),
+    Slide = Color3.fromRGB(255, 98, 0),
+}
 ]]--
 ```
 Create tab
