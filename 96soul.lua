@@ -118,7 +118,7 @@ end
 
 local _96soul = Instance.new("ScreenGui")
 _96soul.Name = "_96soul"
-_96soul.Parent = not game:GetService("RunService"):IsStudio() and game:GetService("CoreGui") or game:GetService("Players").LocalPlayer.PlayerGui
+_96soul.Parent = gethui()
 _96soul.ZIndexBehavior = Enum.ZIndexBehavior.Global
 _96soul.IgnoreGuiInset = true
 
@@ -685,7 +685,7 @@ function Library:New(meta)
 				Title_1.TextSize = 12
 
 				UIGradient_1.Parent = Button
-				UIGradient_1.Color = _G.Theme.Button or ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 255, 127)), ColorSequenceKeypoint.new(1, Color3.fromRGB(0, 79, 38))}
+				UIGradient_1.Color = _G.Button or ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 255, 127)), ColorSequenceKeypoint.new(1, Color3.fromRGB(0, 79, 38))}
 				UIGradient_1.Rotation = 90
 				
 				clickbutton.MouseButton1Click:Connect(function()
@@ -790,7 +790,7 @@ function Library:New(meta)
 				Color_1.Size = UDim2.new(1, 0,1, 0)
 
 				UIGradient_1.Parent = Color_1
-				UIGradient_1.Color = _G.Theme.Toggle or ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 255, 127)), ColorSequenceKeypoint.new(1, Color3.fromRGB(0, 129, 62))}
+				UIGradient_1.Color = _G.Toggle or ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 255, 127)), ColorSequenceKeypoint.new(1, Color3.fromRGB(0, 129, 62))}
 
 				UICorner_2.Parent = Color_1
 				UICorner_2.CornerRadius = UDim.new(1,0)
@@ -1308,7 +1308,7 @@ function Library:New(meta)
 					Line_1.Name = "Line"
 					Line_1.Parent = Real_1
 					Line_1.AnchorPoint = Vector2.new(0, 0.5)
-					Line_1.BackgroundColor3 = _G.Theme.Dropdown Color3.fromRGB(0,255,127)
+					Line_1.BackgroundColor3 = _G.Dropdown or Color3.fromRGB(0,255,127)
 					Line_1.BackgroundTransparency = 1
 					Line_1.BorderColor3 = Color3.fromRGB(0,0,0)
 					Line_1.BorderSizePixel = 0
@@ -1700,7 +1700,7 @@ function Library:New(meta)
 				Color_1.Name = "Color"
 				Color_1.Parent = Bar_1
 				Color_1.AnchorPoint = Vector2.new(0, 0.5)
-				Color_1.BackgroundColor3 = _G.Theme.Slide or Color3.fromRGB(0,255,127)
+				Color_1.BackgroundColor3 = _G.Slide or Color3.fromRGB(0,255,127)
 				Color_1.BorderColor3 = Color3.fromRGB(0,0,0)
 				Color_1.BorderSizePixel = 0
 				Color_1.Position = UDim2.new(0, 0,0.5, 0)
@@ -1886,5 +1886,11 @@ function Library:New(meta)
 	return Library.Tab
 end
 return Library
+
+
+
+
+
+
 
 
