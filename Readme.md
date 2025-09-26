@@ -24,10 +24,7 @@ local Tab = Window:AddTab("General")
 ```
 Create Section
 ``` lua
-local left =  Tab:Section({
-	title = "Section",
-	side = "l" -- or r
-})
+local left =  Tab:Section({title = "Section",side = "l" -- or r})
 ```
 Create Button
 ```lua
