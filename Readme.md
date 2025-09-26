@@ -6,10 +6,6 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/KUYKU
 ```
 Create Windows
 ```lua
-local Window = Library:New({
-	logo = 137425711541503,
-	bind = Enum.KeyCode.Q
-})
 --[[
 _G.TabColor = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255,0,0)),ColorSequenceKeypoint.new(0.5, Color3.fromRGB(255,140,0)),ColorSequenceKeypoint.new(1, Color3.fromRGB(255,140,0))}
 _G.Button = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255,0,0)),ColorSequenceKeypoint.new(0.5, Color3.fromRGB(255,140,0)),ColorSequenceKeypoint.new(1,Color3.fromRGB(255,140,0))}
@@ -17,6 +13,10 @@ _G.Toggle = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 4
 _G.Dropdown = Color3.fromRGB(255, 98, 0)
 _G.Slide = Color3.fromRGB(255, 98, 0)
 ]]--
+local Window = Library:New({
+	logo = 137425711541503,
+	bind = Enum.KeyCode.Q
+})
 ```
 Create tab
 ```lua
